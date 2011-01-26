@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.sqlite.driver</name>
+	<name>com.nayaware.dbtools.sqlite</name>
 	<comment></comment>
 	<projects>
 	</projects>

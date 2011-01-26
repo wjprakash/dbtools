@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Driver Plug-in
-Bundle-SymbolicName: org.postgresql.driver;singleton:=true
+Bundle-SymbolicName: com.nayaware.dbtools.postgresql;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-ClassPath: postgresql-8.3-604.jdbc3.jar, .
 Export-Package: org.postgresql,

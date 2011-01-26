@@ -17,9 +17,9 @@ public class RemoteMySqlTest {
 
 	public static IConnectionConfig createMySqlConnectionConfig() {
 		String name = "Remote MySql";
-		String url = "jdbc:mysql://ajaxlibraryprojectw2.aptanacloud.com:3306/?allowMultiQueries=true&zeroDateTimeBehavior=convertToNull";
-		String username = "wjprakash";
-		String password = "wjp987";
+		String url = "jdbc:mysql://****";
+		String username = "*******";
+		String password = "*******";
 		return new ConnectionConfig(name, url, IConnectionType.MYSQL, username, password);
 	}
 

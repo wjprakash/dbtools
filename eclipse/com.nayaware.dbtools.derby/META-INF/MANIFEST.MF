@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Driver Plug-in
-Bundle-SymbolicName: org.derby.driver;singleton:=true
+Bundle-SymbolicName: com.nayawre.dbtools.derby;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-ClassPath: derby.jar,
  derbyLocale_de_DE.jar,

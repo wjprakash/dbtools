@@ -3,36 +3,36 @@
 <templates>
 <!-- select -->
 	<template context="com.nayaware.dbtools.editor.sql.template"
-		description="%selectTemplate1.description" id="com.aptana.ide.editor.sql.templates.select1"
+		description="%selectTemplate1.description" id="com.nayaware.dbtools.editor.sql.templates.select1"
 		name="SELECT">SELECT * FROM ${table};</template>
 	<template context="com.nayaware.dbtools.editor.sql.template"
-		description="%selectTemplate2.description" id="com.aptana.ide.editor.sql.templates.select2"
+		description="%selectTemplate2.description" id="com.nayaware.dbtools.editor.sql.templates.select2"
 		name="SELECT">SELECT ${columns} FROM ${table};</template>
 	<template context="com.nayaware.dbtools.editor.sql.template"
-		description="%selectTemplate3.description" id="com.aptana.ide.editor.sql.templates.select3"
+		description="%selectTemplate3.description" id="com.nayaware.dbtools.editor.sql.templates.select3"
 		name="SELECT">SELECT ${columns} FROM ${table} WHERE ${attr}='${value}';
 	</template>
 
 <!-- update -->
 	<template context="com.nayaware.dbtools.editor.sql.template"
-		description="%updateTemplate1.description" id="com.aptana.ide.editor.sql.templates.update1"
+		description="%updateTemplate1.description" id="com.nayaware.dbtools.editor.sql.templates.update1"
 		name="UPDATE">UPDATE ${table} SET ${column}='${value}';</template>
 	<template context="com.nayaware.dbtools.editor.sql.template"
-		description="%updateTemplate1.description" id="com.aptana.ide.editor.sql.templates.update1"
+		description="%updateTemplate1.description" id="com.nayaware.dbtools.editor.sql.templates.update1"
 		name="UPDATE">UPDATE ${table} SET ${column}='${value}' WHERE
 		${attr}='${value}';</template>
 	
 <!-- delete -->
 	<template context="com.nayaware.dbtools.editor.sql.template"
-		description="%deleteTemplate1.description" id="com.aptana.ide.editor.sql.templates.delete1"
+		description="%deleteTemplate1.description" id="com.nayaware.dbtools.editor.sql.templates.delete1"
 		name="DELETE">DELETE FROM ${table} WHERE ${attr}='${value}';</template>
 	
 <!-- insert -->
 	<template context="com.nayaware.dbtools.editor.sql.template"
-		description="%insertTemplate1.description" id="com.aptana.ide.editor.sql.templates.insert1"
+		description="%insertTemplate1.description" id="com.nayaware.dbtools.editor.sql.templates.insert1"
 		name="INSERT">INSERT INTO ${table} VALUES ('${val}');</template>
 	<template context="com.nayaware.dbtools.editor.sql.template"
-		description="%insertTemplate2.description" id="com.aptana.ide.editor.sql.templates.insert2"
+		description="%insertTemplate2.description" id="com.nayaware.dbtools.editor.sql.templates.insert2"
 		name="INSERT">INSERT INTO ${table} ('${column}') VALUES ('${val}');
 	</template>
 

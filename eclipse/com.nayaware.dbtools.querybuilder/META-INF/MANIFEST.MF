@@ -4,7 +4,7 @@ Bundle-Name: Querybuilder Plug-in
 Bundle-SymbolicName: com.nayaware.dbtools.querybuilder;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Activator: com.nayaware.dbtools.querybuilder.QueryBuilderPlugin
-Bundle-Vendor: APTANA
+Bundle-Vendor: NAYAWARE
 Require-Bundle: org.eclipse.jface;bundle-version="3.4.0",
  org.eclipse.jface.text;bundle-version="3.4.0",
  org.eclipse.ui;bundle-version="3.4.0",

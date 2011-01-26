@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Driver1 Plug-in
-Bundle-SymbolicName: com.mysql.driver;singleton:=true
+Bundle-SymbolicName: com.nayaware.dbtools.mysql;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Vendor: MYSQL
 Require-Bundle: org.eclipse.core.runtime,

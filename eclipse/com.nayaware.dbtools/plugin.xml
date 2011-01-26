@@ -10,14 +10,14 @@
          point="org.eclipse.ui.views">
       <category
             name="%DbExplorer.Category.Name"
-            id="com.aptana.ide.dbexplorer">
+            id="com.nayaware.dbtools">
       </category>
       <view
             name="%DbExplorer.View.Name"
             icon="icons/dbExplorer.png"
-            category="com.aptana.ide.dbexplorer"
-            class="com.aptana.ide.dbexplorer.views.DbExplorerView"
-            id="com.aptana.ide.dbexplorer.views.DbExplorerView">
+            category="com.nayaware.dbtools"
+            class="com.nayaware.dbtools.views.DbExplorerView"
+            id="com.nayaware.dbtools.views.DbExplorerView">
       </view>
    </extension>
    <extension
@@ -29,29 +29,29 @@
    <extension
          point="org.eclipse.ui.editors">
       <editor
-            class="com.aptana.ide.dbexplorer.editors.sql.SqlEditor"
-            contributorClass="com.aptana.ide.dbexplorer.editors.sql.SqlEditorActionBarContributor"
+            class="com.nayaware.dbtools.editors.sql.SqlEditor"
+            contributorClass="com.nayaware.dbtools.editors.sql.SqlEditorActionBarContributor"
             default="false"
             extensions="sql"
             icon="icons/sqlEditor.png"
-            id="com.aptana.ide.dbexplorer.sqlEditor"
+            id="com.nayaware.dbtools.sqlEditor"
             name="sqlEditor">
       </editor>
       <editor
-            class="com.aptana.ide.dbexplorer.editors.TableDataEditor"
+            class="com.nayaware.dbtools.editors.TableDataEditor"
             default="false"
             icon="icons/tableEditor.png"
-            id="com.aptana.ide.dbexplorer.tableDataEditor"
+            id="com.nayaware.dbtools.tableDataEditor"
             name="Table Editor">
       </editor>
    </extension>
    <extension
-         id="com.aptana.ide.dbexplorer.editors.template"
+         id="com.nayaware.dbtools.editors.template"
          name="SQL Editor Templates"
          point="org.eclipse.ui.editors.templates">
       <contextType
-            class="com.aptana.ide.dbexplorer.editors.sql.templates.SqlTemplateContextType"
-            id="com.aptana.ide.dbexplorer.editor.sql.template"
+            class="com.nayaware.dbtools.editors.sql.templates.SqlTemplateContextType"
+            id="com.nayaware.dbtools.editor.sql.template"
             name="SQL ">
       </contextType>
       <include
@@ -62,19 +62,19 @@
    <extension
          point="org.eclipse.core.runtime.preferences">
       <initializer
-            class="com.aptana.ide.dbexplorer.preferences.PreferenceInitializer">
+            class="com.nayaware.dbtools.preferences.PreferenceInitializer">
       </initializer>
    </extension>
    <extension
          point="org.eclipse.ui.preferencePages">
       <page
-            class="com.aptana.ide.dbexplorer.preferences.SqlEditorPreferencePage"
-            id="com.aptana.ide.dbexplorer.preferences.SqlEditorPreferencePage"
+            class="com.nayaware.dbtools.preferences.SqlEditorPreferencePage"
+            id="com.nayaware.dbtools.preferences.SqlEditorPreferencePage"
             name="SQL Editor">
       </page>
       <page
-            class="com.aptana.ide.dbexplorer.preferences.SqlTemplatePreferencePage"
-            id="com.aptana.ide.dbexplorer.preferences.SqlTemplatePreferencePage"
+            class="com.nayaware.dbtools.preferences.SqlTemplatePreferencePage"
+            id="com.nayaware.dbtools.preferences.SqlTemplatePreferencePage"
             name="SQL Templates">
       </page>
    </extension>
