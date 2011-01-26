@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.nayaware.dbtools.queryBuilder">
+      <queryBuilder
+            editorInput="com.nayaware.dbtools.querybuilder.QueryBuilderInput"
+            id="com.nayaware.dbtools.queryBuilder">
+      </queryBuilder>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.nayaware.dbtools.querybuilder.QueryBuilder"
+            contributorClass="com.nayaware.dbtools.querybuilder.QueryBuilderActionBarContributor"
+            default="false"
+            icon="icons/queryBuilder.png"
+            id="com.nayaware.dbtools.queryBuilder"
+            name="Query Builder">
+      </editor>
+   </extension>
+
+</plugin>

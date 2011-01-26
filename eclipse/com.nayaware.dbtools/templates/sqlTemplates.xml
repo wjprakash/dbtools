@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SQL Templates -->
+<templates>
+<!-- select -->
+	<template context="com.nayaware.dbtools.editor.sql.template"
+		description="%selectTemplate1.description" id="com.aptana.ide.editor.sql.templates.select1"
+		name="SELECT">SELECT * FROM ${table};</template>
+	<template context="com.nayaware.dbtools.editor.sql.template"
+		description="%selectTemplate2.description" id="com.aptana.ide.editor.sql.templates.select2"
+		name="SELECT">SELECT ${columns} FROM ${table};</template>
+	<template context="com.nayaware.dbtools.editor.sql.template"
+		description="%selectTemplate3.description" id="com.aptana.ide.editor.sql.templates.select3"
+		name="SELECT">SELECT ${columns} FROM ${table} WHERE ${attr}='${value}';
+	</template>
+
+<!-- update -->
+	<template context="com.nayaware.dbtools.editor.sql.template"
+		description="%updateTemplate1.description" id="com.aptana.ide.editor.sql.templates.update1"
+		name="UPDATE">UPDATE ${table} SET ${column}='${value}';</template>
+	<template context="com.nayaware.dbtools.editor.sql.template"
+		description="%updateTemplate1.description" id="com.aptana.ide.editor.sql.templates.update1"
+		name="UPDATE">UPDATE ${table} SET ${column}='${value}' WHERE
+		${attr}='${value}';</template>
+	
+<!-- delete -->
+	<template context="com.nayaware.dbtools.editor.sql.template"
+		description="%deleteTemplate1.description" id="com.aptana.ide.editor.sql.templates.delete1"
+		name="DELETE">DELETE FROM ${table} WHERE ${attr}='${value}';</template>
+	
+<!-- insert -->
+	<template context="com.nayaware.dbtools.editor.sql.template"
+		description="%insertTemplate1.description" id="com.aptana.ide.editor.sql.templates.insert1"
+		name="INSERT">INSERT INTO ${table} VALUES ('${val}');</template>
+	<template context="com.nayaware.dbtools.editor.sql.template"
+		description="%insertTemplate2.description" id="com.aptana.ide.editor.sql.templates.insert2"
+		name="INSERT">INSERT INTO ${table} ('${column}') VALUES ('${val}');
+	</template>
+
+<!-- create -->
+	<template name="CREATE" description="%create.table.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.createtable">CREATE
+		TABLE ${tableName} ( ${columnName} ${dataType} ${notNull} )</template>
+		
+<!-- drop -->
+	<template name="DROP" description="%drop.table.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.droptable">DROP
+		TABLE ${tableName}</template>
+	
+<!-- alter -->
+	<template name="ALTER" description="%alter.add.column.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.addcolumn">ALTER
+		TABLE ${tableName} ADD COLUMN ${columnName} ${dataType}</template>
+	<template name="ALTER" description="%alter.add.column.oracle.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.addcolumn2">ALTER
+		TABLE ${tableName} ADD ${columnName} ${dataType}</template>
+	<template name="ALTER" description="%alter.drop.column.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.delcolumn">ALTER
+		TABLE ${tableName} DROP COLUMN ${columnName}</template>
+	<template name="ALTER" description="%alter.add.constraint.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.addconstraint">ALTER
+		TABLE ${tableName} ADD CONSTRAINT ${constraintName}
+		${constraintType}(${columnName})</template>
+	<template name="ALTER" description="%alter.drop.constraint.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.delconstraint">ALTER
+		TABLE ${tableName} DROP CONSTRAINT ${constraintName}</template>
+
+<!-- truncate -->
+	<template name="TRUNCATE" description="%truncate.desc"
+		context="zigen.plugin.db.template.sql" id="zigen.plugin.db.template.sql.truncate">TRUNCATE TABLE
+		${tableName}</template>
+				
+<!-- order -->
+	<template name="ORDER" description="%order.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.order"> ORDER BY
+		${columnName}</template>
+	
+<!-- group -->
+	<template name="GROUP" description="%group.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.group">GROUP
+		BY ${columnName}</template>
+	
+<!-- case -->
+	<template name="CASE" description="%case.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.case">CASE
+		${columnName} WHEN ${value} THEN ${value} ELSE ${value} END</template>
+	<template name="case" description="%case2.desc)"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.case">CASE
+		WHEN ${columnName} = ${value} THEN ${value} ELSE ${value} END
+	</template>
+		
+<!-- describe -->
+	<template name="DESCRIBE" description="%describe.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.describe">DESCRIBE
+		${tableName}</template>
+
+<!-- count -->
+	<template name="COUNT" description="%count.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.count">
+		COUNT(${columnName})</template>
+	<template name="MAX" description="%max.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.max">
+		MAX(${columnName})</template>
+	<template name="MIN" description="%min.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.min">
+		MIN(${columnName})</template>
+	<template name="AVG" description="%avg.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.avg">
+		AVG(${columnName})</template>
+	<template name="SUM" description="%sum.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.sum">
+		SUM(${columnName})</template>
+	<template name="TO_CHAR" description="%to_char.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.tochar">
+		TO_CHAR(${columnName})</template>
+	<template name="TO_NUMBER" description="%to_number.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.tonumber">
+		TO_NUMBER(${columnName})</template>
+	<template name="TO_DATE" description="%to_date.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.todate">
+		TO_DATE(${columnName})</template>
+	<template name="DECODE" description="%decode.desc"
+		context="com.nayaware.dbtools.editor.sql.template" id="com.nayaware.dbtools.editor.sql.template.decode">
+		DECODE(${columnName})</template>
+</templates>

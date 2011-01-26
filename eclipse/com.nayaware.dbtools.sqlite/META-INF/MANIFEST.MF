@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SQLite Driver Plug-in
+Bundle-SymbolicName: org.sqlite.driver;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: sqlitejdbc-v054.jar, .
+Bundle-Vendor: Zentus.com
+Export-Package: org.sqlite,
+ org.sqlite.driver
+Require-Bundle: com.nayaware.dbtools;bundle-version="1.0.0"

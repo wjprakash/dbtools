@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.nayaware.dbtools.jdbcDriver">
+      <jdbcConnectionDriver
+            connectionTypeInfo="org.sqlite.driver.SqliteConnectionType"
+            displayName="Sqlite"
+            id="org.sqlite.driver.jdbcConnectionDriver6"
+            jdbcDriverClass="org.sqlite.JDBC"
+            jdbcDriverType="4">
+      </jdbcConnectionDriver>
+   </extension>
+
+</plugin>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.nayaware.dbtools.jdbcDriver">
+      <jdbcConnectionDriver
+            connectionTypeInfo="org.derby.driver.DerbyNetworkConnectionType"
+            displayName="Derby (Network)"
+            id="org.derby.driver.network"
+            jdbcDriverClass="org.apache.derby.jdbc.ClientDriver"
+            jdbcDriverType="4">
+      </jdbcConnectionDriver>
+      <jdbcConnectionDriver
+            connectionTypeInfo="org.derby.driver.DerbyEmbeddedConnectionType"
+            displayName="Derby (Embedded)"
+            id="org.derby.driver.network"
+            jdbcDriverClass="org.apache.derby.jdbc.EmbeddedDriver"
+            jdbcDriverType="4">
+      </jdbcConnectionDriver>
+   </extension>
+</plugin>

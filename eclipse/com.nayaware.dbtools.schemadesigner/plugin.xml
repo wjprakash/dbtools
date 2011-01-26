@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.nayaware.dbtools.schemadesigner.SchemaDesigner"
+            contributorClass="com.nayaware.dbtools.schemadesigner.SchemaDesignerActionBarContributor"
+            default="false"
+            icon="icons/schemaDesigner.png"
+            id="com.nayaware.dbtools.schemaDesigner"
+            name="schemaDesigner">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.nayaware.dbtools.schemadesigner.SchemaDiagramViewer"
+            contributorClass="com.nayaware.dbtools.schemadesigner.SchemaDesignerActionBarContributor"
+            default="false"
+            icon="icons/schemaDiagram.gif"
+            id="com.nayaware.dbtools.schemaDiagramViewer"
+            name="schemaDiagramViewer">
+      </editor>
+   </extension>
+
+   <extension
+         point="com.nayaware.dbtools.schemaDesigner">
+      <schemaDesigner
+            editorInput="com.nayaware.dbtools.schemadesigner.SchemaDesignerInput"
+            id="com.nayaware.dbtools.schemaDesigner">
+      </schemaDesigner>
+   </extension>
+   <extension
+         point="com.nayaware.dbtools.schemaViewer">
+      <schemaViewer
+            editorInput="com.nayaware.dbtools.schemadesigner.SchemaDiagramInput"
+            id="com.nayaware.dbtools.schemaDiagramViewer">
+      </schemaViewer>
+   </extension>
+
+</plugin>

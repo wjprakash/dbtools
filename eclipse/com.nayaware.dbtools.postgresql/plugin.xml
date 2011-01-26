@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="com.nayaware.dbtools.jdbcDriver">
+      <jdbcConnectionDriver
+            connectionTypeInfo="org.postgresql.driver.PostgreSqlConnectionType"
+            displayName="PostgreSQL"
+            id="org.postgresql.driver"
+            jdbcDriverClass="org.postgresql.Driver"
+            jdbcDriverType="4">
+      </jdbcConnectionDriver>
+   </extension>
+
+</plugin>

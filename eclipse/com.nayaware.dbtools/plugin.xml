@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension-point id="jdbcDriver" name="JDBC Driver" schema="schema/jdbcDriver.exsd"/>
+   <extension-point id="queryBuilder" name="queryBuilder" schema="schema/queryBuilder.exsd"/>
+   <extension-point id="schemaDesigner" name="schemaDesigner" schema="schema/schemadesigner.exsd"/>
+   <extension-point id="schemaViewer" name="schemaViewer" schema="schema/schemaViewer.exsd"/>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="%DbExplorer.Category.Name"
+            id="com.aptana.ide.dbexplorer">
+      </category>
+      <view
+            name="%DbExplorer.View.Name"
+            icon="icons/dbExplorer.png"
+            category="com.aptana.ide.dbexplorer"
+            class="com.aptana.ide.dbexplorer.views.DbExplorerView"
+            id="com.aptana.ide.dbexplorer.views.DbExplorerView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.aptana.ide.dbexplorer.editors.sql.SqlEditor"
+            contributorClass="com.aptana.ide.dbexplorer.editors.sql.SqlEditorActionBarContributor"
+            default="false"
+            extensions="sql"
+            icon="icons/sqlEditor.png"
+            id="com.aptana.ide.dbexplorer.sqlEditor"
+            name="sqlEditor">
+      </editor>
+      <editor
+            class="com.aptana.ide.dbexplorer.editors.TableDataEditor"
+            default="false"
+            icon="icons/tableEditor.png"
+            id="com.aptana.ide.dbexplorer.tableDataEditor"
+            name="Table Editor">
+      </editor>
+   </extension>
+   <extension
+         id="com.aptana.ide.dbexplorer.editors.template"
+         name="SQL Editor Templates"
+         point="org.eclipse.ui.editors.templates">
+      <contextType
+            class="com.aptana.ide.dbexplorer.editors.sql.templates.SqlTemplateContextType"
+            id="com.aptana.ide.dbexplorer.editor.sql.template"
+            name="SQL ">
+      </contextType>
+      <include
+            file="templates/sqlTemplates.xml"
+            translations="templates/sqlTemplates.properties">
+      </include>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.aptana.ide.dbexplorer.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.aptana.ide.dbexplorer.preferences.SqlEditorPreferencePage"
+            id="com.aptana.ide.dbexplorer.preferences.SqlEditorPreferencePage"
+            name="SQL Editor">
+      </page>
+      <page
+            class="com.aptana.ide.dbexplorer.preferences.SqlTemplatePreferencePage"
+            id="com.aptana.ide.dbexplorer.preferences.SqlTemplatePreferencePage"
+            name="SQL Templates">
+      </page>
+   </extension>
+</plugin>
